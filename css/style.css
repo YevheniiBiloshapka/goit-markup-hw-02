@@ -50,6 +50,7 @@ body{
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
+	font-family: inherit;
 
 }
 .button:hover, .button:focus{
@@ -64,6 +65,7 @@ body{
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--title-color);
+	font-family: inherit;
 }
 .filter-active, .filter:hover, .filter:focus{
 	font-weight: 500;
@@ -73,6 +75,7 @@ body{
 	letter-spacing: 0.03em;
 	color: var(--btn-text-color);
 	background-color: var(--active-color);
+	font-family: inherit;
 }
 
 /* *font style */
