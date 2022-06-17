@@ -1,5 +1,13 @@
+/* Zero */
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
 ul li {
 	list-style: none;
+	margin: 0px;
+	padding: 0px;
 }
 a,
 a:visited {
@@ -11,11 +19,56 @@ address{font-style: normal;}
 --title-color: #212121;
 --text-color: #757575;
 --bg-color: #2F303A;
+--btn-text-color: #ffffff;
+}
+button{
+	/* Knocking the button */
+		border: none;
+		font: inherit;
+		color: inherit;
+		background-color: transparent;
+		cursor: pointer;
 }
 
 body{
 	font-family:'Roboto' ;
+	font-style: normal;
 }
+/*? Zero end*/
+
+/* ! button */
+.button{
+	background: #2196F3;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	color: var(--btn-text-color);
+	border-radius: 4px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 30px;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 0.06em;
+}
+.button:hover, .button:focus{
+	background-color: rgb(31, 133, 216);
+}
+/*? button end */
+
+/* *font style */
+.title{
+		font-weight: 700;
+		font-size: 36px;
+		line-height: 42px;
+		text-align: center;
+		letter-spacing: 0.03em;
+		color: var(--title-color);
+}
+.subtitle{
+
+}
+
+
+/* *font style  end*/
 
 /* ! Header  */
 .logo{
@@ -32,7 +85,7 @@ text-decoration: none;
 color: var(--active-color);
 }
 .logo-second-word{
-	color: #ffffff;
+	color: var(--btn-text-color);
 }
 
 .link{
@@ -45,28 +98,103 @@ color: var(--active-color);
 .link:hover, .link:focus{
 	color:var(--active-color);
 }
-.tab-active{
+.link-active{
 	color: var(--active-color);
 }
 .contacts{
 	color: var(--text-color);
 }
-/*  header end  */
+/* ? header end  */
+
+
+
 
 /* ! main  */
 
+/* ! hero */
+.hero{
+	background-color: var(--bg-color);
+}
+.hero-title{
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: #FFFFFF;
+}
 
+/* !  Peculiarities*/
+.visually-title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
 
+.feature-title {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--title-color);
+}
 
-/*  main end  */
+.feature-text {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
+}
 
+/* ! Our command */
+.team {
+	background-color: #F5F4FA;
 
+}
 
+.team-card {
+	width: 270px;
+	height: 368px;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+				0px 1px 1px rgba(0, 0, 0, 0.14),
+				0px 2px 1px rgba(0, 0, 0, 0.2);
+	background: #FFFFFF;
+	border-radius: 0px 0px 4px 4px;
+}
 
+.team-card-name {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+}
+
+.team-card-job {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
+}
+
+/* ? main end  */
 
 /* ! footer  */
 .addres{
-	color: #ffffff;
+	color:var(--btn-text-color);
 }
 .contacts-footer{
 color: rgba(255, 255, 255, 0.6);
@@ -76,4 +204,4 @@ footer{
 	background-color: var(--bg-color) ;
 	
 }
-/* footer end  */
+/*? footer end  */
