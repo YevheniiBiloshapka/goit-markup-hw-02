@@ -18,6 +18,7 @@ address{font-style: normal;}
 
 :root{
 --active-color: #2196F3;
+--hover-color: #107ed8;
 --title-color: #212121;
 --text-color: #757575;
 --bg-color: #2F303A;
@@ -29,6 +30,7 @@ button{
 		font: inherit;
 		color: inherit;
 		background-color: transparent;
+		cursor: pointer;
 }
 
 body{
@@ -53,7 +55,7 @@ body{
 
 }
 .button:hover, .button:focus{
-	background-color: rgb(31, 133, 216);
+	background-color: var(--hover-color);
 }
 /*? button end */
 
@@ -131,7 +133,7 @@ color: var(--active-color);
 	letter-spacing: 0.02em;
 }
 .link:hover, .link:focus{
-	color:var(--active-color);
+	color:var(--hover-color);
 }
 .link-active{
 	color: var(--active-color);
@@ -173,7 +175,6 @@ color: var(--active-color);
 }
 
 .feature-text {
-	font-weight: 400;
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.03em;
@@ -206,7 +207,6 @@ color: var(--active-color);
 }
 
 .team-card-job {
-	font-weight: 400;
 	font-size: 16px;
 	line-height: 19px;
 	text-align: center;
