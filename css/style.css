@@ -1,3 +1,79 @@
-.h1{
-	color: brown;
+ul li {
+	list-style: none;
 }
+a,
+a:visited {
+	text-decoration: none;
+}
+address{font-style: normal;}
+:root{
+--active-color: #2196F3;
+--title-color: #212121;
+--text-color: #757575;
+--bg-color: #2F303A;
+}
+
+body{
+	font-family:'Roboto' ;
+}
+
+/* ! Header  */
+.logo{
+font-family: 'Raleway';
+font-size: 26px;
+font-weight: 700;
+color: #000000;;
+letter-spacing: 0.03em;
+line-height: 31px;
+font-size: 26px;
+text-decoration: none;
+}
+.logo-first-words{
+color: var(--active-color);
+}
+.logo-second-word{
+	color: #ffffff;
+}
+
+.link{
+	color: var(--title-color);
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.02em;
+}
+.link:hover, .link:focus{
+	color:var(--active-color);
+}
+.tab-active{
+	color: var(--active-color);
+}
+.contacts{
+	color: var(--text-color);
+}
+/*  header end  */
+
+/* ! main  */
+
+
+
+
+/*  main end  */
+
+
+
+
+
+/* ! footer  */
+.addres{
+	color: #ffffff;
+}
+.contacts-footer{
+color: rgba(255, 255, 255, 0.6);
+
+}
+footer{
+	background-color: var(--bg-color) ;
+	
+}
+/* footer end  */
