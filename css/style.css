@@ -14,6 +14,8 @@ a:visited {
 	text-decoration: none;
 }
 address{font-style: normal;}
+/*? Zero end*/
+
 :root{
 --active-color: #2196F3;
 --title-color: #212121;
@@ -34,7 +36,7 @@ body{
 	font-family:'Roboto' ;
 	font-style: normal;
 }
-/*? Zero end*/
+
 
 /* ! button */
 .button{
@@ -48,11 +50,30 @@ body{
 	align-items: center;
 	text-align: center;
 	letter-spacing: 0.06em;
+
 }
 .button:hover, .button:focus{
 	background-color: rgb(31, 133, 216);
 }
 /*? button end */
+
+.filter {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--title-color);
+}
+.filter-active, .filter:hover, .filter:focus{
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: var(--btn-text-color);
+	background-color: var(--active-color);
+}
 
 /* *font style */
 .title{
@@ -65,6 +86,18 @@ body{
 }
 .subtitle{
 
+}
+.visually-title {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 
@@ -109,7 +142,7 @@ color: var(--active-color);
 
 
 
-/* ! main  */
+/* * main studio */
 
 /* ! hero */
 .hero{
@@ -126,18 +159,7 @@ color: var(--active-color);
 }
 
 /* !  Peculiarities*/
-.visually-title {
-	position: absolute;
-	width: 1px;
-	height: 1px;
-	margin: -1px;
-	border: 0;
-	padding: 0;
-	white-space: nowrap;
-	clip-path: inset(100%);
-	clip: rect(0 0 0 0);
-	overflow: hidden;
-}
+
 
 .feature-title {
 	font-weight: 700;
@@ -190,7 +212,32 @@ color: var(--active-color);
 	color: var(--text-color);
 }
 
-/* ? main end  */
+/* * main studio end  */
+.projects {}
+
+.project {
+	width: 370px;
+	height: 404px;
+}
+
+.project-name {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 36px;
+	letter-spacing: 0.06em;
+	color: var(--title-color);
+}
+
+.project-description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 30px;
+	letter-spacing: 0.03em;
+	color: var(--text-color);
+}
+/* * main portfolio end  */
+
+
 
 /* ! footer  */
 .addres{
